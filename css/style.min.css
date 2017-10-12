@@ -1,0 +1,134 @@
+/* Common styles */
+
+body{
+	/*background-image: url('../img/bck-2.jpg');*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:red;
+}
+a{
+	text-decoration:none;
+	color: black;
+	backface-visibility: white;
+}
+a:hover, a:active{
+	text-decoration: none;
+	color:white;
+}
+
+/* Nav bar styles */
+
+.navbar-toggle{
+	border-color: red;
+	background: white;
+}
+.nav-tabs li a{
+	padding: 10px 0px;
+	border-bottom: none;
+	/*border-width: 2px;
+	border-color: solid black;*/
+}
+#myNavbar{
+	padding: 0px 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    opacity: 0.7;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Banner */
+
+.carousel-inner img {
+	min-width: 100%;
+	margin: auto;
+	min-height:200px;
+}
+#myCarousel{
+	padding: 10px 15px;
+}
+
+
+
+/* Main Content */
+
+#map{
+      height:400px;
+      max-width:100%;
+      /*margin-left:0px;*/
+}
+@media only screen and (min-width: 768px) {
+    #map{
+		margin-left:-15px;
+	}
+}
+
+
+
+/* Footer */
+
+
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
