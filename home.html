@@ -16,9 +16,9 @@
 		<h2>Justified Tabs/Pills</h2>
 	  	<p>The .nav-justified class makes navigation tabs/pills equal widths of t</p>        
 
-    	<span class="visible-xs" style="font-size:20px;cursor:pointer; text-align: center;" onclick="openNav()">&#9776;Menu</span>
+    	<span class="visible-xs" style="font-size:20px;cursor:pointer; text-align: center;" id="side_menu_btn">&#9776;Menu</span>
     	<div id="mySidenav" class="sidenav">
-    		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    		<a href="javascript:void(0)" class="closebtn">&times;</a>
     		<a href="#" class="active">Home</a>
 		    <a href="#">About US</a>
 		    <a href="#">HPY 2011</a>
@@ -29,8 +29,8 @@
 		</div>  
 
 	  	<div class="collapse navbar-collapse" id="myNavbar">
-		  <ul class="nav nav-tabs nav-justified" style="width: 100%;">
-		    <li class="active"><a href="#">Home</a></li>
+		  <ul class="nav nav-tabs nav-justified">
+		    <li><a href="#" class="active">Home</a></li>
 		    <li><a href="javascript:void(0)" onclick="show_snackbar('txt here')">About US</a></li>
 		    <li><a href="javascript:void(0)" onclick="show_snackbar('txt here')">HPY 2011</a></li>
 		    <li><a href="javascript:void(0)" onclick="show_snackbar('txt here')">Mentoring</a></li>
@@ -79,9 +79,9 @@
 
 	<div class="container" id="main-content">
 		<div class="row content">
-			<div class="col-sm-4 col-xs-12" id="info" style="margin:0;">
-				<div class="panel" style="background: transparent; opacity: 0.8;">
-					<div class="panel-heading" style="display: inline-flex; padding: 0 5px; width: 100%; background: #00BFFF;">
+			<div class="col-sm-4 col-xs-12" id="info">
+				<div class="panel">
+					<div class="panel-heading" style="display: inline-flex; padding: 0 5px; width: 100%; background:#32CD32;">
 						<div>
 							<img src="img/head_phone.png" alt="img here" style="height: 40px; width: 40px;">
 						</div>
@@ -89,7 +89,32 @@
 							<h4>HPY SONG</h4>
 						</div>
 					</div>
-	            	<div class="panel-body">Panel Content</div>
+	            	<div class="panel-body">
+	            		<em>
+	            		I'm gonna fight 'em all
+						A seven nation army couldn't hold me back
+						They're gonna rip it off
+						Taking their time right behind my back
+						And I'm talking to myself at night
+						Because I can't forget
+						Back and forth through my mind
+						Behind a cigarette
+						And the message coming from my eyes
+						Says leave it alone
+						Don't want to hear about it
+						Every single one's got a story to tell
+						Everyone knows about it
+						From the Queen of England to the hounds of hell
+						And if I catch it coming back my way
+						I'm gonna serve it to you
+						And that ain't what you want to hear
+						But that's what I'll do
+						And the feeling coming from my bones
+						Says find a home
+						I'm going to Wichita
+						Far from… 
+						</em>
+	            	</div>
 	            	<div class="panel-body" style="text-align: center;">
 						<div>
 							<img src="img/head_phone.png" alt="img here" style="height: 30px; width: 30px;">
@@ -111,7 +136,7 @@
 	  	</div>
 	</div>
 
-	<footer class="container" style="background: grey; height: 50px; padding: 15px 0; border-radius: 6px;">
+	<footer class="container">
 	  <p> &nbsp; HPY india.com 2010 | All rights reserved</p>
 	</footer>
 	

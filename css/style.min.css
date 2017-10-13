@@ -1,5 +1,4 @@
 /* Common styles */
-
 body{
 	/*background-image: url('../img/bck-2.jpg');*/
 	background-attachment: fixed;
@@ -7,27 +6,27 @@ body{
 	background-size: cover;
 	color:black;
 }
-a{
-	text-decoration:none;
-	color: black;
-	backface-visibility: white;
-}
-a:hover, a:active{
+a, a:hover{
 	text-decoration: none;
-	color:white;
 }
 
 /* Nav bar styles */
+.nav-justified li{
+    padding: 0 1px;
 
-.navbar-toggle{
-	border-color: red;
-	background: white;
+}
+.nav-justified li a:hover, .nav-justified li a.active{
+    background: #32CD32;
+    transform: scale(1.08);
 }
 .nav-tabs li a{
-	padding: 10px 0px;
-	border-bottom: none;
-	/*border-width: 2px;
-	border-color: solid black;*/
+    text-decoration: none;
+    color: #FFFFFF;
+    background:linear-gradient(to bottom, #DCDCDC, #808080);
+    border:1px solid #FFFFFF;
+    padding: 10px 0px;
+	font-size: 15px;
+    font-weight: 500;
 }
 #myNavbar{
 	padding: 0px 0px;
@@ -40,26 +39,29 @@ a:hover, a:active{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     text-align:center;
-    opacity: 0.7;
+    opacity: 0.95;
+    background-image: url('../img/bck.jpg');
 }
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 10px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    font-weight: 400;
+    color: #00BFFF;
     display: block;
     transition: 0.3s;
+    opacity: 0.8;
 
 }
 .sidenav a:hover{
-    color: #f1f1f1;
+    transform: scale(1.5);
+    color: #DC143C;
 }
-.sidenav .closebtn {
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -82,9 +84,14 @@ a:hover, a:active{
 
 
 /* Main Content */
-
+.panel, #map{
+    border: 10px solid white;
+}
+.panel{
+    background-color: #32CD32;
+}
 #map{
-      height:400px;
+      height:500px;
       max-width:100%;
       /*margin-left:0px;*/
 }
@@ -97,7 +104,17 @@ a:hover, a:active{
 
 
 /* Footer */
-
+footer{
+    background:linear-gradient(to bottom, #DCDCDC, #808080);
+    height: 50px; 
+    border-radius: 4px;
+}
+footer p{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding: 15px 0px;
+}
 
 
 #snackbar {
