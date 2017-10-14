@@ -1,6 +1,6 @@
 /* Common styles */
 body{
-	/*background-image: url('../img/bck-2.jpg');*/
+	background-image: url('../img/bck-2.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -9,11 +9,56 @@ body{
 a, a:hover{
 	text-decoration: none;
 }
+.nav-tabs li a , footer{
+    background:linear-gradient(to bottom, #DCDCDC, #808080);
+}
 
 /* Nav bar styles */
-.nav-justified li{
-    padding: 0 1px;
-
+#heading p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.btn-sm:hover{
+    color:#DC143C;
+}
+.btn-sm{
+    margin-left: -6px; 
+    background: #32CD32;
+}
+#heading p:nth-last-child(2){
+    font-size: 30px; 
+    color: #32CD32; 
+    font-weight: 300;
+}
+#heading p:last-child{
+    font-size: 5px;
+    margin-top: 0px;
+    width: auto;
+}
+#header-btn{
+    text-align: right;
+    color: white;
+}
+.dropdown-menu li, .dropdown-menu li a, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+    background: #32CD32;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    text-align: right;
+}
+.dropdown-toggle, .dropdown-toggle:hover{
+    background: transparent; 
+    color:#32CD32; 
+    border:none;
+}
+.dropdown-menu{
+    margin-top:-10px;
+    background: #32CD32;
+}
+.dropdown-menu li a:hover{
+    background: #32CD32;
+    color: #DC143C;
 }
 .nav-justified li a:hover, .nav-justified li a.active{
     background: #32CD32;
@@ -22,7 +67,6 @@ a, a:hover{
 .nav-tabs li a{
     text-decoration: none;
     color: #FFFFFF;
-    background:linear-gradient(to bottom, #DCDCDC, #808080);
     border:1px solid #FFFFFF;
     padding: 10px 0px;
 	font-size: 15px;
@@ -31,7 +75,11 @@ a, a:hover{
 #myNavbar{
 	padding: 0px 0px;
 }
-
+#side_menu_btn{
+    font-size:20px;
+    cursor:pointer; 
+    text-align: center;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -44,7 +92,7 @@ a, a:hover{
     padding-top: 60px;
     text-align:center;
     opacity: 0.95;
-    background-image: url('../img/bck.jpg');
+    background-image: url('../img/bck-1.jpg');
 }
 .sidenav a {
     padding: 10px;
@@ -85,13 +133,57 @@ a, a:hover{
 
 /* Main Content */
 .panel, #map{
-    border: 10px solid white;
+    border: 5px solid white;
+    margin-bottom: 5px;
 }
 .panel{
-    background-color: #32CD32;
+    background:linear-gradient(to bottom, #DCDCDC, #8ff441);
+    
 }
+.panel-heading{
+    display: inline-flex;
+    padding:0 5px; 
+    width: 100%; 
+    background:#32CD32;
+    color: white;
+}
+.panel-heading div:last-child{
+    width:100%;
+    text-align: center;
+}
+.panel-heading img{
+    height: 50px; 
+}
+.panel-body{
+    font: 15px Baskerville;
+    text-align: center;
+    line-height: 1.3;
+}
+.panel-body p:first-letter {
+    font-size: 25px;
+    line-height: 1;
+}
+    
+.panel-body p:first-line {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+.panel-body img{
+    height: 30px; 
+    width: 30px;
+}
+@media screen and (max-width: 360px) {
+    .panel-body{
+        font: 13px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+        text-align: center;
+        line-height: 1.3;
+        /*padding-bottom: 0px;*/
+    }
+}
+
+
 #map{
-      height:500px;
+      height:550px;
       max-width:100%;
       /*margin-left:0px;*/
 }
@@ -105,7 +197,6 @@ a, a:hover{
 
 /* Footer */
 footer{
-    background:linear-gradient(to bottom, #DCDCDC, #808080);
     height: 50px; 
     border-radius: 4px;
 }
@@ -114,38 +205,4 @@ footer p{
     color: #FFFFFF;
     font-weight: 300;
     padding: 15px 0px;
-}
-
-
-#snackbar {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 30px;
-    font-size: 17px;
-}
-
-#snackbar.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
-
-
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
 }
