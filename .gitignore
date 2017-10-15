@@ -1,4 +1,7 @@
 .DS_Store
+css/.DS_Store
+img/.DS_Store
+js/.DS_Store
 css/bootstrap.min.css
 css/bootstrap.min.css.map
 js/bootstrap.min.js
