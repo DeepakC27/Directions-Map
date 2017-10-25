@@ -30,6 +30,23 @@ a, a:hover{
     } 
 }
 
+.sideeffect{
+    animation-name: sideeffect;
+    -webkit-animation-name: sideeffect; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible; 
+}
+@keyframes sideeffect {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
 
 /* Nav bar styles */
 #heading p{
